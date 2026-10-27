@@ -1,0 +1,357 @@
+.screening-page {
+    width: 100%;
+    padding: 0.5rem 0 2rem 0;
+}
+
+.pass-threshold {
+    display: inline-block;
+    margin-top: 0.7rem;
+    padding: 0.35rem 0.65rem;
+    border: 1px solid rgba(59, 130, 246, 0.22);
+    border-radius: 7px;
+    background: rgba(59, 130, 246, 0.07);
+    color: #3b82f6;
+    font-size: 0.78rem;
+    font-weight: 600;
+}
+
+.pass-threshold strong {
+    font-weight: 700;
+}
+
+.screening-header {
+    margin-bottom: 1.8rem;
+}
+
+.screening-title {
+    font-size: 2.15rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    margin-bottom: 0.35rem;
+}
+
+.screening-job-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    opacity: 0.82;
+    margin-bottom: 0.3rem;
+}
+
+.screening-subtitle {
+    font-size: 0.92rem;
+    opacity: 0.58;
+}
+
+
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.summary-card {
+    position: relative;
+    overflow: hidden;
+    min-height: 118px;
+    padding: 1.15rem 1.25rem;
+    border: 1px solid rgba(128, 128, 128, 0.18);
+    border-radius: 16px;
+    background: rgba(128, 128, 128, 0.055);
+    box-sizing: border-box;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.summary-card:hover {
+    transform: translateY(-2px);
+    border-color: rgba(128, 128, 128, 0.30);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+}
+
+.summary-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+}
+
+.summary-total::before {
+    background: #6b7280;
+}
+
+.summary-passed::before {
+    background: #3b82f6;
+}
+
+.summary-potential::before {
+    background: #eab308;
+}
+
+.summary-failed::before {
+    background: #ef4444;
+}
+
+.summary-value {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 0.65rem;
+}
+
+.summary-label {
+    font-size: 0.88rem;
+    opacity: 0.62;
+}
+
+
+
+.candidates-section {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.section-title {
+    font-size: 1.3rem;
+    font-weight: 650;
+    margin-bottom: 0.25rem;
+}
+
+.section-subtitle {
+    font-size: 0.88rem;
+    opacity: 0.55;
+}
+
+
+.candidate-card {
+    position: relative;
+    width: 100%;
+    margin-bottom: 0.15rem;
+    padding: 1.25rem 1.4rem 1.05rem 1.4rem;
+    border: 1px solid rgba(128, 128, 128, 0.20);
+    border-radius: 17px 17px 10px 10px;
+    background: rgba(128, 128, 128, 0.055);
+    box-sizing: border-box;
+    transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.candidate-card:hover {
+    transform: translateY(-2px);
+    border-color: rgba(128, 128, 128, 0.33);
+    box-shadow: 0 9px 24px rgba(0, 0, 0, 0.08);
+}
+
+.candidate-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    border-radius: 17px 0 0 17px;
+}
+
+.candidate-passed::before {
+    background: #3b82f6;
+}
+
+.candidate-potential::before {
+    background: #eab308;
+}
+
+.candidate-failed::before {
+    background: #ef4444;
+}
+
+.candidate-top-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.candidate-name {
+    min-width: 0;
+    font-size: 1rem;
+    font-weight: 650;
+    overflow-wrap: anywhere;
+}
+
+.candidate-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    flex-shrink: 0;
+    font-size: 0.82rem;
+    font-weight: 600;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.status-passed .status-dot {
+    background: #3b82f6;
+    box-shadow: 0 0 8px rgba(59, 130, 246, 0.35);
+}
+
+.status-potential .status-dot {
+    background: #eab308;
+    box-shadow: 0 0 8px rgba(234, 179, 8, 0.30);
+}
+
+.status-failed .status-dot {
+    background: #ef4444;
+    box-shadow: 0 0 8px rgba(239, 68, 68, 0.30);
+}
+
+.status-passed {
+    color: #3b82f6;
+}
+
+.status-potential {
+    color: #d6a600;
+}
+
+.status-failed {
+    color: #ef4444;
+}
+
+.match-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    gap: 1rem;
+}
+
+.match-label {
+    font-size: 0.82rem;
+    opacity: 0.58;
+}
+
+.match-percentage {
+    font-size: 0.92rem;
+    font-weight: 650;
+}
+
+.progress-track {
+    width: 100%;
+    height: 8px;
+    overflow: hidden;
+    border-radius: 999px;
+    background: rgba(128, 128, 128, 0.14);
+}
+
+.progress-fill {
+    height: 100%;
+    border-radius: inherit;
+    animation: progress-fill 0.65s ease-out;
+}
+
+.progress-passed {
+    background: #3b82f6;
+}
+
+.progress-potential {
+    background: #eab308;
+}
+
+.progress-failed {
+    background: #ef4444;
+}
+
+.candidate-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0.85rem;
+    font-size: 0.80rem;
+    opacity: 0.50;
+}
+
+@keyframes progress-fill {
+    from {
+        width: 0;
+    }
+}
+
+
+.candidate-action {
+    margin-bottom: 0.95rem;
+}
+
+.candidate-action button {
+    width: 100%;
+    min-height: 38px;
+    padding: 0.45rem 1rem;
+    border: 1px solid rgba(128, 128, 128, 0.18);
+    border-top: 0;
+    border-radius: 0 0 10px 10px;
+    background: rgba(128, 128, 128, 0.035);
+    color: inherit;
+    font-size: 0.82rem;
+    font-weight: 600;
+    text-align: right;
+    box-shadow: none;
+    transition: background 0.18s ease, border-color 0.18s ease;
+}
+
+.candidate-action button:hover {
+    background: rgba(128, 128, 128, 0.08);
+    border-color: rgba(128, 128, 128, 0.28);
+    color: inherit;
+}
+
+
+.fairness-section {
+    margin-top: 2rem;
+    padding: 1.3rem;
+    border: 1px solid rgba(128, 128, 128, 0.17);
+    border-radius: 16px;
+    background: rgba(128, 128, 128, 0.045);
+}
+
+.fairness-title {
+    font-size: 1.25rem;
+    font-weight: 650;
+    margin-bottom: 0.35rem;
+}
+
+.fairness-subtitle {
+    font-size: 0.88rem;
+    opacity: 0.58;
+    margin-bottom: 1rem;
+}
+
+
+@media (max-width: 900px) {
+    .summary-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .screening-title {
+        font-size: 1.8rem;
+    }
+
+    .summary-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .summary-card {
+        min-height: 100px;
+    }
+
+    .candidate-top-row {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0.55rem;
+    }
+}

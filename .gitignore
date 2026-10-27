@@ -1,0 +1,58 @@
+﻿# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Editor and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs and temporary files
+*.log
+tmp/
+temp/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Private candidate data and uploaded resumes
+uploads/
+private_data/
+data/uploads/
+data/private/
+data/raw/
+
+# Intentionally do not ignore models/
+# ARS AI model files will be included through Git and Git LFS.
+
+# Python bytecode and cache directories
+__pycache__/
+*.py[cod]
+
+# Uploaded or private resume samples
+data/resume_samples/
+uploads/
+private_data/
+data/uploads/
+data/private/
+data/raw/
+
+# Streamlit secrets
+.streamlit/secrets.toml
